@@ -15,12 +15,21 @@
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
+<<<<<<< HEAD
 [Xx]64/
 [Xx]86/
 [Bb]uild/
 bld/
 [Bb]in/
 [Oo]bj/
+=======
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+>>>>>>> origin/master
 
 # Visual Studio 2015 cache/options directory
 .vs/
@@ -40,9 +49,17 @@ TestResult.xml
 [Rr]eleasePS/
 dlldata.c
 
+<<<<<<< HEAD
 # DNX
 project.lock.json
 artifacts/
+=======
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/Properties/launchSettings.json
+>>>>>>> origin/master
 
 *_i.c
 *_p.c
@@ -81,6 +98,10 @@ ipch/
 *.sdf
 *.cachefile
 *.VC.db
+<<<<<<< HEAD
+=======
+*.VC.VC.opendb
+>>>>>>> origin/master
 
 # Visual Studio profiler
 *.psess
@@ -108,6 +129,13 @@ _TeamCity*
 # DotCover is a Code Coverage Tool
 *.dotCover
 
+<<<<<<< HEAD
+=======
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+
+>>>>>>> origin/master
 # NCrunch
 _NCrunch_*
 .*crunch*.local.xml
@@ -139,6 +167,7 @@ publish/
 # Publish Web Output
 *.[Pp]ublish.xml
 *.azurePubxml
+<<<<<<< HEAD
 
 # TODO: Un-comment the next line if you do not want to checkin
 # your web deploy settings because they may include unencrypted
@@ -146,6 +175,18 @@ publish/
 #*.pubxml
 *.publishproj
 
+=======
+# TODO: Comment the next line if you want to checkin your web deploy settings
+# but database connection strings (with potential passwords) will be unencrypted
+*.pubxml
+*.publishproj
+
+# Microsoft Azure Web App publish settings. Comment the next line if you want to
+# checkin your Azure Web App publish settings, but sensitive information contained
+# in these scripts will be unencrypted
+PublishScripts/
+
+>>>>>>> origin/master
 # NuGet Packages
 *.nupkg
 # The packages folder can be ignored because of Package Restore
@@ -154,7 +195,11 @@ publish/
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
+<<<<<<< HEAD
 # NuGet v3's project.json files produces more ignoreable files
+=======
+# NuGet v3's project.json files produces more ignorable files
+>>>>>>> origin/master
 *.nuget.props
 *.nuget.targets
 
@@ -166,9 +211,17 @@ csx/
 ecf/
 rcf/
 
+<<<<<<< HEAD
 # Windows Store app package directory
 AppPackages/
 BundleArtifacts/
+=======
+# Windows Store app package directories and files
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+>>>>>>> origin/master
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
@@ -178,16 +231,31 @@ BundleArtifacts/
 
 # Others
 ClientBin/
+<<<<<<< HEAD
 [Ss]tyle[Cc]op.*
+=======
+>>>>>>> origin/master
 ~$*
 *~
 *.dbmdl
 *.dbproj.schemaview
+<<<<<<< HEAD
 *.pfx
 *.publishsettings
 node_modules/
 orleans.codegen.cs
 
+=======
+*.jfm
+*.pfx
+*.publishsettings
+orleans.codegen.cs
+
+# Since there are multiple workflows, uncomment next line to ignore bower_components
+# (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
+#bower_components/
+
+>>>>>>> origin/master
 # RIA/Silverlight projects
 Generated_Code/
 
@@ -202,6 +270,10 @@ UpgradeLog*.htm
 # SQL Server files
 *.mdf
 *.ldf
+<<<<<<< HEAD
+=======
+*.ndf
+>>>>>>> origin/master
 
 # Business Intelligence projects
 *.rdl.data
@@ -216,6 +288,13 @@ FakesAssemblies/
 
 # Node.js Tools for Visual Studio
 .ntvs_analysis.dat
+<<<<<<< HEAD
+=======
+node_modules/
+
+# Typescript v1 declaration files
+typings/
+>>>>>>> origin/master
 
 # Visual Studio 6 build log
 *.plg
@@ -223,6 +302,12 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
+<<<<<<< HEAD
+=======
+# Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+*.vbw
+
+>>>>>>> origin/master
 # Visual Studio LightSwitch build output
 **/*.HTMLClient/GeneratedArtifacts
 **/*.DesktopClient/GeneratedArtifacts
@@ -231,6 +316,7 @@ FakesAssemblies/
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
 
+<<<<<<< HEAD
 # LightSwitch generated files
 GeneratedArtifacts/
 ModelManifest.xml
@@ -240,3 +326,35 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+=======
+# Paket dependency manager
+.paket/paket.exe
+paket-files/
+
+# FAKE - F# Make
+.fake/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# CodeRush
+.cr/
+
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+
+# Cake - Uncomment if you are using it
+# tools/**
+# !tools/packages.config
+
+# Telerik's JustMock configuration file
+*.jmconfig
+
+# BizTalk build output
+*.btp.cs
+*.btm.cs
+*.odx.cs
+*.xsd.cs
+>>>>>>> origin/master
