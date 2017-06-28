@@ -6,8 +6,10 @@
 
 int main(void)
 {
-	serial_t obj = serial_create("COM1", 9600);
-	unsigned char buf[128], len;
+	serial_t obj = serial_create("COM7", 9600);
+	unsigned char buf[512], send_str[1] = {'a'}, len;
+
+	
 
 	if (obj == NULL) {
 		fprintf(stderr, "オブジェクト生成に失敗");
@@ -16,9 +18,13 @@ int main(void)
 
 	while (1) {
 		len = serial_recv(obj, buf, sizeof(buf));
-		if (len) serial_send(obj, buf, len);
-		Sleep(1);
-		if (_kbhit())  break;
+		printf("%s", buf);
+		for (int i = 0; buf[i] != '\0'; i++)printf("%x ", buf[i]);
+		printf("\n\n");
+		if (len) {
+			serial_send(obj, send_str, sizeof(send_str));
+		}
+		Sleep(100);
 	}
 
 	serial_delete(obj);
