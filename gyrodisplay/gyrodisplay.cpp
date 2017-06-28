@@ -19,12 +19,12 @@ int main(void)
 	while (1) {
 		len = serial_recv(obj, buf, sizeof(buf));
 		printf("%s", buf);
-		for (int i = 0; buf[i] != '\0'; i++)printf("%x ", buf[i]);
+		//for (int i = 0; buf[i] != '\0'; i++)printf("%x ", buf[i]);
 		printf("\n\n");
 		if (len) {
 			serial_send(obj, send_str, sizeof(send_str));
 		}
-		Sleep(100);
+		Sleep(1000);
 	}
 
 	serial_delete(obj);
