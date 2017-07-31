@@ -153,7 +153,6 @@
   <ItemGroup>
     <ClCompile Include="fifo.cpp" />
     <ClCompile Include="gyrodisplay.cpp" />
-    <ClCompile Include="rs232c.cpp" />
     <ClCompile Include="serial.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
